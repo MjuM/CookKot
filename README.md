@@ -1,9 +1,9 @@
-# CookWay
+# CookWay version Kotlin mode Affichage seulement
 - Une application par Majuran Murugananthan
 ## Presentation
-Application android codé en Java utilisant une architecture MVC
+Application android codé en Kotlin utilisant une architecture MVVM
 
-Cette affiche application est une simulation d'un shop de nourriture qui nous permet de choisir un repas parmis une liste de repas , Elle va chercher les informations concernant les repas dans une API github crée par moi même.
+Cette affiche application est une simulation d'un shop de nourriture qui nous permet de afficher une liste de repas , Elle va chercher les informations concernant les repas dans une API github crée par moi même.
 
 ## Prérequis
 - Installation d'Android Studio
@@ -11,37 +11,49 @@ Cette affiche application est une simulation d'un shop de nourriture qui nous pe
 
 ## Consignes respectées
 - Ecran avec une liste d'élément
-- Ecran avec le detail d'un élément
 - Appel WebService à une API Rest
 - Stockage de données en cache
 - Fonctions supplémentaires :
-  - Architecture MVC
-  - Singleton
-  - Affichage de plusieurs activités dont 2 avec des listes dans un Recycler View
-  - 3 Boutons 
-    - Pour Ajouter un element dans notre panier
-    - Pour montrer notre panier
-    - pour vider notre panier
+  - Architecture MVVM
+  - Creation de compte
     
  ## Fonctionnalités
- ### Ecran Principal
+ ### Ecran Acceuil
  
-  - Ecran affichant la liste des repas disponible et leurs prix avec un Recycle View
+  - Ecran affichant un login Screen
+  ![Image of Home](https://github.com/MjuM/ProjectAndroid/blob/master/HOME_SCREENY.PNG)
   
-  ![Image of Home](https://github.com/MjuM/ProjectAndroid/blob/master/Home.jpg)
-  
-### Ecran Detail
+### Login name
 
-  - Ecran qui Affiche la liste d'ingrédients composant le repas avec 3 Boutons
+  - Voici le login name qu'on va utiliser
   
-  ![Image of detail](https://github.com/MjuM/ProjectAndroid/blob/master/Detail.jpg)
+  ![Image of detail](https://github.com/MjuM/ProjectAndroid/blob/master/LOG_NAME.PNG)
   
- ### Ecran du Panier
-  - Lorsqu'on appuie sur montrer votre panier alors qu'on a toujours pas ajouté de Repas celui ci affiche une liste vide :
-  ![Image of empty](https://github.com/MjuM/ProjectAndroid/blob/master/PanierVide.jpg)
+ ### Test de connexion
+  - Lorsqu'on essaye de se connecter sans avoir créer un compte au préalable
   
-  - Lorsqu'on ajoute plusieurs éléments dans le panier il affiche la liste d'éléments qu'on a choisis et le prix total
-  ![Image of full](https://github.com/MjuM/ProjectAndroid/blob/master/PanierPlein.jpg)
+  ![Image of empty](https://github.com/MjuM/ProjectAndroid/blob/master/LOGERROR.PNG)
   
-  - Lorsqu'on appuie sur vider mon panier on retourne sur une liste vide
-  ![Image of remove](https://github.com/MjuM/ProjectAndroid/blob/master/PanierRemov.jpg)
+  - On crée un compte pour palier à ce problème
+  
+  ![Image of full](https://github.com/MjuM/ProjectAndroid/blob/master/CREATE_ACCOUNTY.PNG)
+  
+  - On voit bien dans la database la présence de l'identifiant
+  
+  ![Image of remove](https://github.com/MjuM/ProjectAndroid/blob/master/DATABASE_INSPECTOR.PNG)
+
+   - On arrive bien à se connecter maintenant
+   
+  ![Image of detail1](https://github.com/MjuM/ProjectAndroid/blob/master/LOG_SUCCESS.PNG)
+  
+  - Affichage de la liste suite à la connection
+  
+  ![Image of remove1](https://github.com/MjuM/ProjectAndroid/blob/master/LIST.PNG)
+  
+  - Affichage de la liste suite à la connection mais cette fois ci en mode avion ( stockage en cache )
+  
+  ![Image of remove2](https://github.com/MjuM/ProjectAndroid/blob/master/MODEAVION.PNG)
+  
+  
+  
+  
